@@ -49,16 +49,16 @@ const ResultDialogue = ({ onClose, colCard, item, onEdit }) => {
     return (
         <div onClick={onClose} className='fixed bg-[rgba(0,0,0,0.5)] top-0 left-0 w-full h-full z-50'>
             <div onClick={(e) => { e.stopPropagation() }} className='absolute top-[10%] left-[10%] w-[80%] h-[80%] bg-neutral-800 rounded-3xl'>
-                <div className='w-full h-full relative rounded-2xl gap-8 flex p-8'>
+                <div className='w-full h-full relative rounded-2xl gap-8 flex lg:flex-row flex-col p-8'>
                     <button onClick={onClose} className="rounded-full p-2.5 absolute top-1 right-1 bg-neutral-900 cursor-pointer hover:bg-neutral-950 duration-200"><X strokeWidth={2.5} /></button>
-                    <a target='blank' href={item.url} className='w-1/2 min-h-fit max-h-full flex items-center justify-center'>
-                        {item.type === 'photo' || item.type === 'gif' ? <img src={item.thumbnail} alt={item.title} className='max-w-full max-h-full rounded-lg object-contain' /> :
+                    <a target='blank' href={item.url} className='lg:w-1/2 w-full h-full flex items-center justify-center'>
+                        {item.type === 'photo' ? <img src={item.thumbnail} alt={item.title} className='max-w-full max-h-full rounded-lg object-contain' /> : item.type === 'gif' ? <img src={item.url || item.thumbnail} alt={item.title} className='w-full h-full max-w-full max-h-full rounded-lg object-contain' /> :
                             <video controls className='max-w-full max-h-full rounded-lg object-contain'>
                                 <source src={item.url} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>}
                     </a>
-                    <div className='w-1/2 h-fit gap-5 mt-3 flex-col flex justify-center'>
+                    <div className='lg:w-1/2 w-full h-fit gap-5 mt-3 flex-col flex justify-center'>
                         <h1 className='capitalize font-bold text-2xl'>{item.title}</h1>
                         <p className='font-medium text-[18px] w-4/5'>{item.description}</p>
                         <div className='flex gap-2'>

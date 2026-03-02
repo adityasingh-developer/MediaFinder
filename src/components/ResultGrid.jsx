@@ -66,8 +66,8 @@ const ResultGrid = () => {
           title: item.title || 'GIF',
           type: 'gif',
           description: item.title,
-          thumbnail: item.file?.sm?.gif?.url,
-          url: item.file?.md?.gif?.url || item.file?.hd?.gif?.url,
+          thumbnail: item.file?.md?.gif?.url || item.file?.hd?.gif?.url || item.file?.sm?.gif?.url,
+          url: item.file?.hd?.gif?.url || item.file?.md?.gif?.url || item.file?.sm?.gif?.url,
         }));
 
         console.log('GIFS FOUND:', Data.length);
