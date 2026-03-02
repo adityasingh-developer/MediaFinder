@@ -29,7 +29,7 @@ const App = () => {
               <Link to='/edit' className='cursor-pointer px-3 rounded-lg hover:bg-[#181818] duration-200  py-4'>Editor</Link>
             </div>
             <button className='cursor-pointer md:flex hidden duration-200 p-3 rounded-full hover:bg-[#202020]'><Bell /></button>
-            <button className='cursor-pointer duration-200 p-0.75 rounded-full hover:bg-[#202020]'><span className='bg-[#ef6c00] px-4 py-2 rounded-full text-2xl'>{randomLetter}</span></button>
+            <button className='cursor-pointer duration-200 p-0.75 rounded-full hover:bg-[#202020]'><span className='bg-[#ef6c00] flex items-center justify-center w-12 h-12 rounded-full text-2xl'>{randomLetter}</span></button>
             <button className='cursor-pointer md:flex hidden duration-200  py-3 px-5 hover:bg-[#202020] rounded-lg border border-neutral-800 bg-neutral-950'>Upload</button>
 
             <button className="hamburger flex md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}><Menu /></button>
