@@ -47,7 +47,6 @@ const App = () => {
           <Link to='/edit' className='p-3 hover:bg-[#202020] rounded-lg font-semibold' onClick={() => setIsMenuOpen(false)}>Editor</Link>
           <div className="h-px bg-[#202020] my-2"></div>
           <button className='p-3 text-left hover:bg-[#202020] rounded-lg font-semibold'>Explore</button>
-          <button className='p-3 text-left hover:bg-[#202020] rounded-lg font-semibold'>License</button>
           <button className='p-3 text-left hover:bg-[#202020] rounded-lg font-semibold'>Upload</button>
         </div>
       </nav>

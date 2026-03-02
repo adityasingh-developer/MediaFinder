@@ -58,7 +58,7 @@ const ResultDialogue = ({ onClose, colCard, item, onEdit }) => {
                                 Your browser does not support the video tag.
                             </video>}
                     </a>
-                    <div className='lg:w-1/2 w-full h-fit gap-5 mt-3 flex-col flex justify-center'>
+                    <div className='lg:w-1/2 w-full lg:relative absolute lg:bg-[rgba(0,0,0,0)] bg-[linear-gradient(180deg,rgba(0,0,0,0)0%,rgba(34,34,34,1)22%)] bottom-0 left-0 rounded-2xl p-2 pt-17 h-fit gap-5 mt-3 flex-col flex justify-center'>   
                         <h1 className='capitalize font-bold text-2xl'>{item.title}</h1>
                         <p className='font-medium text-[18px] w-4/5'>{item.description}</p>
                         <div className='flex gap-2'>
